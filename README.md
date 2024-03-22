@@ -25,3 +25,8 @@ Ketika mengakses 127.0.0.1 pada browser, aplikasi memberikan respon tanpa adanya
 **Commit 5 Reflection Notes**
 <br>
 ThreadPool adalah sekumpulan thread yang sudah diinstansiasi yang siap selalu siap untuk diberikan suatu tugas secara concurrent (bersamaan) oleh aplikasi yang dapat meningkatkan performa serta menghindari latency dalam eksekusi program. ThreadPool juga disebut sebagai replicated workers model. Worker pada program ini memiliki id dan thread nya masing-masing. Worker inilah yang dapat diinstansiasi, dikumpulkan ke dalam ThreadPool, dan diberikan tugasnya masing-masing.
+<br>
+<br>
+**Bonus Function improvement**
+<br>
+Penggunaan `build` dibandingkan `new` dapat dinilai lebih aman dari sisi error handling karena program akan mengembalikan error jika jumlah yang diberikan kurang dari atau sama dengan 0. 
