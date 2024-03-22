@@ -21,3 +21,7 @@ Untuk menangani dua response yang berbeda, dapat dilakukan pemeriksaan apakah `r
 <br>
 Ketika mengakses 127.0.0.1 pada browser, aplikasi memberikan respon tanpa adanya delay yang lama. Ketika mengakses 127.0.0.1/sleep, aplikasi memberikan respon dengan delay 10 detik karena terdapat thread sleep yang menghentikan thread sementara.
 <br>
+<br>
+**Commit 5 Reflection Notes**
+<br>
+ThreadPool adalah sekumpulan thread yang sudah diinstansiasi yang siap selalu siap untuk diberikan suatu tugas secara concurrent (bersamaan) oleh aplikasi yang dapat meningkatkan performa serta menghindari latency dalam eksekusi program. ThreadPool juga disebut sebagai replicated workers model. Worker pada program ini memiliki id dan thread nya masing-masing. Worker inilah yang dapat diinstansiasi, dikumpulkan ke dalam ThreadPool, dan diberikan tugasnya masing-masing.
